@@ -35,29 +35,68 @@
         nav
         d-flex
         justify-content-between
-          
+        
         px-4
         py-3
       "
+      id="my-main-nav"
     >
       <div>
         <h3 class="fw-bold ">TREES</h1>
       </div>
+
       <div class="nav justify-content-center">
-        <li class="nav-item">
+        <li class="nav-item d-none d-md-block">
           <a class="nav-link text-success fw-bold" aria-current="page" href="#"
             >Why plant trees</a
           >
         </li>
-        <li class="nav-item ">
+        <li class="nav-item d-none d-md-block">
           <a class=" nav-link text-success fw-bold " href="#">About us</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item d-none d-md-block">
           <a class="nav-link text-success fw-bold" href="#">Contact us</a>
         </li>
       </div>
-      <button type="button" class="btn btn-danger rounded-pill">Take Action</button>
+      <button type="button " class="btn btn-danger rounded-pill d-none d-md-block">Take Action</button>
+      <div class="d-md-none" id="hamburger">
+      
+      <img src="https://img.icons8.com/ios-glyphs/30/000000/menu--v1.png"/>
     </div>
+    </div>
+    <div class="
+    my-navbar
+    sticky-top
+    nav
+    d-flex
+    flex-column
+    justify-content-center
+    align-items-center
+    
+    d-none
+    d-md-none
+  " id="collapseExample">
+  <div class="nav-item py-2">
+    <a class="nav-link text-success fw-bold" aria-current="page" href="#" id="my-navitem-why"
+      >Why plant trees</a
+    >
+  </div>
+  <div class="nav-item py-2">
+    <a class="nav-link text-success fw-bold" aria-current="page" href="#" id="my-navitem-about"
+      >About us</a
+    >
+  </div>
+  <div class="nav-item py-2">
+    <a class="nav-link text-success fw-bold" aria-current="page" href="#" id="my-navitem-contact"
+      >Contact us</a
+    >
+  </div>
+  <div class="nav-item py-2">
+    <button type="button" class="btn btn-danger rounded-pill">Take Action</button>
+  </div>
+</div>
+
+    
 
 
     <div class="container px-4 mb-5">
@@ -79,7 +118,7 @@
     </div>
 
     <div class="container px-4 mb-5">
-      <div class="row gx-5 gy-5 align-items-center flex-column flex-lg-row mb-5">
+      <div class="row gx-5 gy-5 align-items-center flex-column flex-md-row mb-5">
         <div class="col-lg-8 my-carbon-clock px-5 py-5 ">
           <div class="d-flex justify-content-evenly align-items-center">
               <div class="d-flex justify-content-center align-items-center flex-column">
@@ -117,15 +156,47 @@
       </div>
       <div class="mb-5" >
         <h2 class="text-center my-hero-title fw-bold fs-1 mb-2">The clock is ticking.</h2>
-        <div class="d-flex align-items-center justify-content-center ">
-          <button type="button" class="btn btn-success rounded-pill px-4 fs-5 mx-4">Donate</button>
-          <button type="button" class="btn btn-danger rounded-pill px-4 fs-5 mx-4">Take Action</button>
+        <div class="d-flex align-items-center justify-content-center  flex-column-reverse flex-sm-row">
+          <button type="button" class="btn btn-success rounded-pill px-4 fs-5 mx-4 mb-3">Donate</button>
+          <button type="button" class="btn btn-danger rounded-pill px-4 fs-5 mx-4 mb-3">Take Action</button>
         </div>
       </div>
       
     </div>
-    <div class="container-fluid my-white-div">
-      
+    <div class="container-fluid my-white-div pt-5">
+      <div class="container px-4 my-5">
+        <div class="row gx-7  align-items-center flex-column flex-lg-row ">
+          <div class="col-lg-8 pe-5 mb-5">
+              <h2 class="my-hero-title fw-bold fs-1  ">
+                What we do
+              </h2>
+              <p class="fs-5 ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque deleniti amet illum eligendi sunt reiciendis sequi accusamus temporibus. Aut quibusdam culpa dolore earum sint dolor! Omnis ipsum aliquid vero quisquam!Lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil repudiandae ex odio amet esse, itaque officia rerum doloribus tempora eum magni harum sint delectus fuga mollitia aspernatur sapiente debitis perspiciatis!
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate magni culpa deserunt porro facilis beatae fuga, consectetur non officiis fugit optio molestiae similique, praesentium natus minus velit consequatur ducimus suscipit.
+              </p>
+              <button type="button" class="btn btn-success rounded fs-5">Read more</button>
+            </div>
+          <div class="col-lg-4">
+            <div  >
+              <img class="img-fluid rounded my_about_image d-none d-lg-block" src="images/what_we_do.jpg" alt="smallholder farmer">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h2 class="text-center my-hero-title fw-bold fs-1 ">Our Impact</h2>
+        <div class=" d-flex justify-content-evenly align-items-center mx-auto flex-column flex-sm-row">
+          <div class="">
+            <img src="images/our-impact-1.png" alt="trees_saved">
+            <p class="fs-6  fw-bold text-center" >7 Trees saved</p>
+          </div>
+          <div class="">
+            <img src="images/our-impact-2.png" alt="trees_planted">
+            <p class="fs-6 fw-bold text-center ">20 Trees planted</p>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="script.js"></script>
     <script
